@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eu te vivo🤍</title>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="conteudo">
+    <h1>Um pouquinho de nós!</h1>
+    <div id="qrcode"></div>
+</div>
+    <script>
+ const linkDoVideo = "https://photos.app.goo.gl/6qGSAdWd6GESnzmp9"; 
+
+        new QRCode(document.getElementById("qrcode"), {
+            text: linkDoVideo,
+            width: 250,
+            height: 250,
+            colorDark : "#000000",
+            colorLight : "#ffffff",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+
+
+       
+    </script>
+
+</body>
+</html>
